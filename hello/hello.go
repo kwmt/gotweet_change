@@ -6,9 +6,8 @@ import (
     "net/http"
     "io/ioutil"
     "log"
-    "oauth" // gotweet_change/oauth に配置
 //  "github.com/mrjones/oauth.go" // go install だとうまく動かなかった。。
-
+    "oauth" // gotweet_change/oauth に配置
     "encoding/json"
     "html/template"
 )
