@@ -99,7 +99,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		atoken = *tok
 	}
 
-	const url = "http://api.twitter.com/1/statuses/mentions.json"
+//	const url = "http://api.twitter.com/1/statuses/mentions.json"
+	const url = "http://api.twitter.com/1/statuses/user_timeline.json"
 	log.Print("GET ", url)
 
 	resp, err := consumer.Get(url,nil, &atoken)
